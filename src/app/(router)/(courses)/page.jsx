@@ -13,7 +13,7 @@ function Courses() {
         <CourseList />
       </div>
       {/* Right Container */}
-      <div>Right Section</div>
+      <div>Right Section (Phương làm chỗ này)</div>
     </div>
   );
 }
