@@ -1,7 +1,8 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
-/* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 
-function Register() {
+function Login() {
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
@@ -35,43 +36,10 @@ function Register() {
             </h1>
 
             <p className="mt-4 leading-relaxed text-gray-500 dark:text-gray-400">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              nam dolorum aliquam, quibusdam aperiam voluptatum.
+              Please enter your credentials to log in.
             </p>
 
             <form action="#" className="mt-8 grid grid-cols-6 gap-6">
-              <div className="col-span-6 sm:col-span-3">
-                <label
-                  for="FirstName"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-200"
-                >
-                  First Name
-                </label>
-
-                <input
-                  type="text"
-                  id="FirstName"
-                  name="first_name"
-                  className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 h-10 outline-none p-3"
-                />
-              </div>
-
-              <div className="col-span-6 sm:col-span-3">
-                <label
-                  for="LastName"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-200"
-                >
-                  Last Name
-                </label>
-
-                <input
-                  type="text"
-                  id="LastName"
-                  name="last_name"
-                  className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 h-10 outline-none p-3"
-                />
-              </div>
-
               <div className="col-span-6">
                 <label
                   for="Email"
@@ -88,7 +56,7 @@ function Register() {
                 />
               </div>
 
-              <div className="col-span-6 sm:col-span-3">
+              <div className="col-span-6">
                 <label
                   for="Password"
                   className="block text-sm font-medium text-gray-700 dark:text-gray-200"
@@ -104,41 +72,33 @@ function Register() {
                 />
               </div>
 
-              <div className="col-span-6 sm:col-span-3">
-                <label
-                  for="PasswordConfirmation"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-200"
+              <div className="col-span-6 text-right">
+                <a
+                  href="/forgot-password"
+                  className="text-sm text-gray-700 underline dark:text-gray-200"
                 >
-                  Password Confirmation
-                </label>
-
-                <input
-                  type="password"
-                  id="PasswordConfirmation"
-                  name="password_confirmation"
-                  className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 h-10 outline-none p-3"
-                />
+                  Forgot Password?
+                </a>
               </div>
 
               <div className="col-span-6">
-                <label for="MarketingAccept" className="flex gap-4">
+                <label for="RememberMe" className="flex gap-4">
                   <input
                     type="checkbox"
-                    id="MarketingAccept"
-                    name="marketing_accept"
+                    id="RememberMe"
+                    name="remember_me"
                     className="size-5 rounded-md border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:focus:ring-offset-gray-900 "
                   />
 
                   <span className="text-sm text-gray-700 dark:text-gray-200">
-                    I want to receive emails about events, product updates and
-                    company announcements.
+                    Remember me
                   </span>
                 </label>
               </div>
 
               <div className="col-span-6">
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  By creating an account, you agree to our
+                  By logging in, you agree to our
                   <a
                     href="#"
                     className="text-gray-700 underline dark:text-gray-200"
@@ -160,16 +120,16 @@ function Register() {
 
               <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
                 <button className="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500 dark:hover:bg-blue-700 dark:hover:text-white">
-                  Create an account
+                  Log in
                 </button>
 
                 <p className="mt-4 text-sm text-gray-500 sm:mt-0 dark:text-gray-400">
-                  Already have an account?{" "}
+                  Don't have an account?{" "}
                   <a
-                    href="/login"
+                    href="/register"
                     className="text-gray-700 underline dark:text-gray-200"
                   >
-                    Log in
+                    Sign up
                   </a>
                   .
                 </p>
@@ -182,4 +142,4 @@ function Register() {
   );
 }
 
-export default Register;
+export default Login;
