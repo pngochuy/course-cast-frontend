@@ -1,15 +1,15 @@
 import React from "react";
-import SideNav from "../_components/SideNav";
-import Header from "../_components/Header";
+import SideNavAdmin from "./_components/SideNav-Admin";
+import HeaderAdmin from "./_components/Header-Admin";
 
 function layout({ children }) {
   return (
     <>
       <div className="sm:w-64 sm:block fixed">
-        <SideNav />
+        <SideNavAdmin />
       </div>
       <div className="ml-64">
-        <Header />
+        <HeaderAdmin />
         {children}
       </div>
     </>
