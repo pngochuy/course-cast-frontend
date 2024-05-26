@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "name": "Course 1",
+      "bannerUrl": "/Cong-nghe-thong-tin-la-nganh-hoc-la-dinh-huong-nghe-nghiep-duoc-ua-chuong.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Course 2",
+      "bannerUrl": "/Cong-nghe-thong-tin-la-nganh-hoc-la-dinh-huong-nghe-nghiep-duoc-ua-chuong.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Course 3",
+      "bannerUrl": "/Cong-nghe-thong-tin-la-nganh-hoc-la-dinh-huong-nghe-nghiep-duoc-ua-chuong.jpg"
+    }
+  ]
+  
